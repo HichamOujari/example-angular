@@ -1,0 +1,12 @@
+<div class="addReview">
+  <p class="title">Commentaire :</p>
+  <form (submit)="submitForm(firstName.value,lastName.value,gender.value)" class="content">
+    <input type="text" placeholder="FirstName" #firstName />
+    <input type="text" placeholder="LastName" #lastName />
+    <select #gender>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+      <button>Valider</button>
+  </form>
+</div>
